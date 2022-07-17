@@ -2,8 +2,6 @@
 
 Sync GitHub Labels with labels definition file.
 
-This is a wrapper action for [Financial-Times/github-label-sync](https://github.com/Financial-Times/github-label-sync).
-
 ## Usage
 
 ### .github/labels.yml
@@ -14,22 +12,22 @@ Add `.github/labels.yml` file:
 # .github/labels.yml
 - name: add
   description: Add new features.
-  color: "0E8A16"
+  color: "0e8a16"
 - name: change
   description: Change existing functionality.
-  color: "FBCA04"
+  color: "fbca04"
 - name: deprecate
   description: Mark as soon-to-be removed features.
-  color: "D93F0B"
+  color: "d93f0b"
 - name: remove
   description: Remove features.
-  color: "B60205"
+  color: "b60205"
 - name: fix
   description: Fix bug.
-  color: "5319E7"
+  color: "5319e7"
 - name: security
   description: In case of vulnerabilities.
-  color: "0052CC"
+  color: "0052cc"
 ```
 
 ### .github/workflows/github-label-sync.yml
@@ -99,3 +97,7 @@ If you want to change labels in another repository, use `target_repository` opti
   with:
     target_repository: foo/bar
 ```
+
+## Notes
+
+This is a wrapper action for [github-label-sync](https://github.com/Financial-Times/github-label-sync).
