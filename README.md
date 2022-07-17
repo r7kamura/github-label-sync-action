@@ -4,10 +4,8 @@ Sync GitHub Labels with labels definition file.
 
 ## Usage
 
-You need to take the following 2 steps:
-
-1. Add `.github/labels.yml`
-2. Add `.github/workflows/github-label-sync.yml`
+1. Add `.github/workflows/github-label-sync.yml`
+2. Add `.github/labels.yml` (or use `source_repository` option)
 
 ```yaml
 # .github/labels.yml
