@@ -4,9 +4,10 @@ Sync GitHub Labels with labels definition file.
 
 ## Usage
 
-### .github/labels.yml
+You need to take the following 2 steps:
 
-Add `.github/labels.yml` file:
+1. Add `.github/labels.yml`
+2. Add `.github/workflows/github-label-sync.yml`
 
 ```yaml
 # .github/labels.yml
@@ -29,10 +30,6 @@ Add `.github/labels.yml` file:
   description: In case of vulnerabilities.
   color: "0052cc"
 ```
-
-### .github/workflows/github-label-sync.yml
-
-Add workflow file to your repository:
 
 ```yaml
 # .github/workflows/github-label-sync.yml
@@ -100,4 +97,21 @@ If you want to change labels in another repository, use `target_repository` opti
 
 ## Notes
 
-This is a wrapper action for [github-label-sync](https://github.com/Financial-Times/github-label-sync).
+### github-label-presets
+
+It would be tedious to prepare `.github/labels.yml` by yourself, so we have prepared some presets.
+
+- https://github.com/r7kamura/github-label-presets
+
+```yaml
+- uses: r7kamura/github-label-sync-action@v0
+  with:
+    source_path: labels-keepachangelog.yml
+    source_repository: r7kamura/github-label-presets
+```
+
+### github-label-sync
+
+This is a wrapper action for github-label-sync.
+
+- https://github.com/Financial-Times/github-label-sync
