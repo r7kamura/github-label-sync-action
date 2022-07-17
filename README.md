@@ -1,6 +1,6 @@
 # github-label-sync-action
 
-GitHub Action to sync labels with `.github/labels.yml` file.
+Sync GitHub Labels with labels definition file.
 
 This is a wrapper action for [Financial-Times/github-label-sync](https://github.com/Financial-Times/github-label-sync).
 
