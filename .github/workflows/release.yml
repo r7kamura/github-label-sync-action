@@ -1,0 +1,13 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: r7kamura/workflows/.github/workflows/release-action.yml@main
