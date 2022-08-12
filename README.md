@@ -113,3 +113,11 @@ It would be tedious to prepare `.github/labels.yml` by yourself, so we have prep
 This is a wrapper action for github-label-sync.
 
 - https://github.com/Financial-Times/github-label-sync
+
+### 403: Resource not accessible by integration
+
+If you have encountered this error,
+
+> 403: Resource not accessible by integration
+
+please check `Settings > Actions > General > Workflow permissions` and change it from "Read repository contents permission" to "Read and write permissions", or manually specify `permissions` on your workflow definition.
