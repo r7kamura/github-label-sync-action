@@ -1,5 +1,8 @@
 # github-label-sync-action
 
+> [!NOTE]
+> This project is archived because the github-label-sync package it depends on is no longer maintained, so I decided to archive this one too. Sorry for the inconvenience. If you would like to take over maintenance, please contact me somewhere.
+
 Sync GitHub Labels with labels definition file.
 
 ## Usage
